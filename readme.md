@@ -2,7 +2,7 @@
 
 > A collection of custom Vim snippets
 
-Exclusive supports (and therefore dependent on) the UltiSnips engine.
+Exclusive support for (and therefore dependent on) the UltiSnips engine.
 
 ## Usage
 
