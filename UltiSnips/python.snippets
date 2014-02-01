@@ -1,0 +1,28 @@
+# vim ft=snippets sw=4
+
+snippet docs "Header info and module information" b
+#!/usr/bin/env python3
+# Copyright `!v strftime("%Y")` `!v g:snips_author` <`!v g:snips_author_email`>
+'''${1:One line summary of the program}.
+
+${2:More elaborate usage description}.
+'''
+endsnippet
+
+snippet ifm "Main method" b
+def main():
+		${2:pass}
+
+if __name__ == '__main__':
+		${1:main()}
+endsnippet
+
+snippet args "Add CLI argument parsing via argparse" b
+def parse_args():
+		'''Parse the command-line arguments.'''
+		parser = argparse.ArgumentParser(description=__doc__.split('\n')[0],
+				formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+		parser.add_argument('${1:-s}', '${2:--long}',
+				help='${3:option usage description}')
+		return parser.parse_args()
+endsnippet
