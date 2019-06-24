@@ -1,3 +1,7 @@
 snippet copy "Insert copyright notice" b
 © `!v strftime("%Y")` `!v g:snips_author` <`!v g:snips_author_email`>
 endsnippet
+
+snippet author "Insert authorship" b
+"`!v g:snips_author` <`!v g:snips_author_email`> (`!v g:snips_author_website`)"
+endsnippet
